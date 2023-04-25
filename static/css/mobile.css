@@ -1,0 +1,58 @@
+body{
+    overflow-x: hidden;
+}
+
+.card{
+    margin-right: 0px;
+}
+
+.aboutus{
+    margin: auto;
+    margin-bottom: 90px;
+}
+
+.animate__animated, .animate__fadeInRight{
+    --animate-duration: 3s;
+  }
+  .animate__animated, .animate__fadeInLeft{
+    --animate-duration: 3s;
+  }
+  .animate__animated, .animate__fadeInRight{
+    --animate-duration: 3s;
+  }
+  
+  p{
+    font-size: 1rem;
+  }
+
+  #container .card-news{
+    animation: fadeIn; 
+    animation-duration: 4s;
+}
+
+#container .card-news1{
+    animation: fadeIn; 
+    animation-duration: 4s;
+}
+
+#navbar{
+  display: flex;
+  position: relative;
+}
+
+#navbar ul li{
+  visibility: hidden;
+}
+
+#navbar #logo{
+  visibility: visible;
+  position: absolute;
+  left: 0px;
+  top: -20px;
+}
+#navbar button{
+  visibility: visible;
+  position: absolute;
+  right: 0px;
+  top: 1px;
+}

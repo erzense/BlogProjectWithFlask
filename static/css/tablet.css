@@ -1,0 +1,127 @@
+body{
+    overflow-x: hidden;
+}
+#container{
+    flex-wrap: wrap;
+}
+
+#container .card{
+    margin-right: 0px;
+}
+
+.checkpoint h1,p{
+    font-size: 0.65em;
+}
+
+/*
+.checkpoint:nth-child(odd){
+    transform: translate(-50%);
+    border-right: 1px solid #888;
+    padding-right: 0.5em;
+    width: 150px;
+    flex-wrap: wrap;
+}
+
+.checkpoint:nth-child(even){
+    transform: translate(50%);
+    border-left: 1px solid #888;
+    padding-left: 0.5em;
+    width: 150px;
+    flex-wrap: wrap
+}
+*/
+
+.aboutus{
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 90px;
+}
+
+.timeline{
+    margin: 50px auto;
+}
+
+.timeline::after{
+    left: 31px;
+}
+
+.checkpoint{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+}
+
+.timeline h1{
+    font-size: 1.2em;
+}
+.timeline p{
+    font-size: 0.95em;
+}
+
+.circle{
+    visibility: hidden;
+}
+
+#container .card-news{
+    animation: fadeIn; 
+    animation-duration: 4s;
+}
+
+#container .card-news1{
+    animation: fadeIn; 
+    animation-duration: 4s;
+}
+
+#container .card-blog{
+    animation: fadeIn; 
+    animation-duration: 4s;
+}
+
+.a,.c{
+    box-shadow: 10px 8px 10px #9f036b; 
+    animation: fadeIn ;
+    animation-duration: 4s; 
+} 
+.b,.d{
+    box-shadow: -10px 8px 10px #099fc4;  
+    animation: fadeIn ;
+    animation-duration: 4s; 
+}
+.text-box{
+    width: 100%;
+}
+
+.checkpoint:nth-child(even){
+    left: 0;
+}
+
+.left-arrow, .right-arrow{
+    border-right: 17px solid #211f1f;
+    border-left: 0;
+    left: -15px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.list-articles li .article-box .a-content .a-inner-content .butonlar a{
+    color: #ff0000; width: 45%; margin-right: 10px;
+  }
+
+  .navbar-red{
+  
+    background-color: #FFC107;
+    color: #fff;
+  
+  }
+
+  .article-box .a-photo, .article-box img{
+    width: 0% !important;
+    height: 0% !important;
+  }
+
+  .article-box .a-content{
+    width: 100% !important;
+    background-image: url("/static/images/city.jpg");
+  }

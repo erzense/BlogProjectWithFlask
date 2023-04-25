@@ -1,0 +1,61 @@
+*{
+  font-family: "Roboto Condensed",sans-serif;
+}
+
+body{
+  line-height: normal;
+  position: relative;
+}
+
+.animate__animated, .animate__fadeInRight{
+  --animate-duration: 3.5s;
+}
+.animate__animated, .animate__fadeInLeft{
+  --animate-duration: 3.5s;
+}
+.animate__animated, .animate__fadeInRight{
+  --animate-duration: 3.5s;
+}
+
+.bi-calendar{
+  color: wheat !important;
+  display: block;
+  width: 15px !important;
+  height: 15px !important;
+  z-index: 31;
+}
+.text-center {
+    text-align: center;
+  }
+  
+  .heading-small {
+    font-size: 1.25rem;
+  }
+  .heading-medium {
+    font-size: 1.5rem;
+  }
+  .heading-big {
+    font-size: 1.75rem;
+  }
+
+  .line-height-med{
+    line-height: 2rem;
+  }
+  
+  /* Colors */
+  
+  .bg-dark-blue {
+    background: #062e51;
+  }
+  .bg-light-blue {
+    background: #336ea2;
+  }
+  .bg-light {
+    background: #fff;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color:white
+  }
+
