@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+{%if author_page %}
+    <div class="author">
+        <div class="author-page-foto"><img src="{{author_page.imageUrl}}" alt=""></div>
+        <div class="author_page_name"><h4>{{author_page.author}}</h4></div>
+        <p style="margin-bottom: 20px;">{{author_page.cv|safe}}</p> 
+        <span type="button" style="margin-bottom: 100px;" id="" class="btn btn-outline-warning">LinkedIn</span>
+        
+    </div>
+    
+{% else %}
+    <div class="alert alert-danger">
+        Böyle bir yazar bulunmuyor...
+    </div>
+{% endif %}
+
+{% endblock body %}
+
+

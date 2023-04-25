@@ -1,0 +1,37 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+<br><br><br>
+
+{%if article %}
+    <h2 style="color: white;">{{article.title}}</h4>
+    <h5 style="color: white;">Yazar: {{article.author}}</h2>
+    <div class="a-photo">
+        <img src="{{article.imageUrl}}" style="width: 400px; height: auto; margin-bottom: 25px;" alt="">
+      </div>
+    <p>{{article.content}}</p>
+
+    <br><br><br><br>
+    <p style="font-size: 2rem;">Önerilen Yazılar</p>
+    <div class="recoms">
+          
+
+        <div class="recom">
+            
+        </div>
+        <div class="recom">
+           
+        </div>
+        <div class="recom">
+            
+        </div>
+    </div>
+    
+{% else %}
+    <div class="alert alert-danger">
+        Böyle bir makale bulunmuyor...
+    </div>
+
+
+{% endif %}
+{% endblock %}

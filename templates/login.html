@@ -1,0 +1,29 @@
+{% extends 'layout.html'%}
+
+{%block body%}
+    <br><br><br>
+    
+
+    {% from "includes/_formhelpers.html" import render_field %}
+<hr>
+<form method="post">
+    
+      {% if session['logged_in'] == True %}
+        <h3>GİRİŞ YAPTINIZ</h3>
+        <a href="/logout">Çıkış Yap</a>
+        <a href="/dashboard">Kontrol Paneli</a>
+
+      {% else %}
+        <h3 style="color: white;">Giriş</h3>
+        <h3 style="color: white;">Kullanıcı Adı</h3>  
+        {{ render_field(form.username, class="form-control") }}
+        <h3 style="color: white;">Parola</h3>  
+        {{ render_field(form.password, class="form-control") }}
+        <button type="submit" class="btn btn-success">Giriş Yap</button>
+      {% endif %}    
+    
+      
+    
+      
+  </form>
+{%endblock body%}

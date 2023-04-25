@@ -1,0 +1,39 @@
+{% extends 'layout.html'%}
+
+{% block body %}
+<br><br><br>
+
+{% if articles %}
+  <ul class="list-articles">
+    {% for article in articles %}
+    <li class="list-i">    
+    <div class="article-box">
+      <div class="a-photo">
+        <img src="{{article.imageUrl}}" alt="">
+      </div>
+      <div class="a-content">
+       <div class="a-inner-content">
+        
+       
+        <div class="a-title" style="height: 12%; width: 100%; overflow-y: auto;"><h5>{{article.title}}</h5></div>
+        <div class="created_date" style="margin-top: 5px;">
+        
+        </div>
+        <div class="gradient-line" style="width: 100px; height: 3px; background-color:#FFC107; margin-bottom: 4px;" ></div>
+        <div class="a-text" style="width: 100%; height: 50%; overflow-y: hidden;">{{article.content|safe}}</div>
+        <div class="butonlar d-flex flex-start" style="width: 100%;">
+          <a href="author-page/{{article.author_username}}"><button type="button" class="btn btn-outline-warning">{{article.author}}</button></a>
+          <a href="article/{{article.id}}"><button type="button" class="btn btn-outline-warning">Oku</button></a>
+        </div>
+      </div>
+    </div>
+    </div>   
+    </li>
+    {% endfor %}
+  </ul>
+{% else %}
+    <div class="btn btn-danger">Bu blogta henüz makale bulunmuyor</div>
+{% endif %}
+{% endblock %}
+
+</a>
